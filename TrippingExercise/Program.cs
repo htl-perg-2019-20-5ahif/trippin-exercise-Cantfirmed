@@ -8,7 +8,7 @@ namespace TrippingExercise {
     public static partial class Program {
         
         private static HttpClient Client
-            = new HttpClient() { BaseAddress = new Uri("https://www.odata.org/odata-services/TripPinRESTierService/(S(jfaslkdjfalök213dsa))") };
+            = new HttpClient() { BaseAddress = new Uri("https://www.odata.org/odata-services/TripPinRESTierService/(S(vefsn0uv1rynvd2bh2wjv3xl))") };
 
         public static async Task UserExists(User user) {
             if (!(await Client.GetAsync($"People('{user.UserName}')")).IsSuccessStatusCode) {
